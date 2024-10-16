@@ -1,0 +1,62 @@
+---
+// Define the array of tech, packages, languages.
+const otherprojects = [
+"Python", "FastAPI", "TypeScript", "React", "Node", "ArangoDB", "NextJS", "Salesforce APIs", "Microservices", "Kubernetes", "Docker", "GraphQL", "REST APIs",  "Test Driven Development", "MongoDB", "PostgreSQL", "Kafka", "Git",  "Redux", "Prisma"
+
+];
+
+---
+
+<section class="bg-primary">
+  <div class="px-8 2xl:max-w-7xl mx-auto py-32">
+    <div class="space-y-2">
+      <!-- Section Title and Decorative Elements -->
+      <div
+        class="h-0.5 bg-secondary"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+      </div>
+      <h3
+        class="text-secondary text-base font-medium"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        <span>Main</span>
+        <span class="font-bold">Technologies</span>
+      </h3>
+    </div>
+    
+    
+    <ul class="text-secondary comma-list list-none text-base py-12"         data-aos="fade-up"
+    data-aos-duration="1800"
+>  {
+otherprojects.map((project) => (
+      <li class="inline after:content-[','] last:after:content-['']">{project}</li>
+  
+    ))}
+    </ul>
+    
+    <style>
+    @media (min-width: 768px) {
+      .comma-list {
+        padding-left: 1rem;
+        list-style: square;
+      }
+    
+      .comma-list > * {
+        display: list-item;
+        width: 33%;
+        float: left;
+      }
+    
+      .comma-list > *:after {
+        content: '';
+      }
+    }
+    </style>
+    
+
+
+  </div>
+</section>
